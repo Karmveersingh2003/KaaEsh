@@ -1,0 +1,147 @@
+
+/*Footer bar*/
+.footer-bar {
+	background-color: #F8F8F8;
+	padding-top: 50px;
+}
+
+.footer-bar .footer-lang {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.footer-logo{
+    height: 38px;
+}
+.footer-bar .footer-lang img.footer-logo {
+	height: 38px;
+}
+
+.footer-bar .footer-lang a.lang-btn {
+	text-decoration: none;
+	font-size: 16px;
+	color: #1c1c1c;
+	padding: 8px 5px;
+	border: 1px solid #b5b5b5;
+	border-radius: 8px;
+	margin-right: 15px;
+}
+
+.footer-bar .footer-last-links {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.footer-bar .footer-last-links ul li{
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.footer-bar .footer-last-links h4.footer-list-title {
+	margin-bottom: 10px;
+	letter-spacing: 0.2rem;
+	font-size: 14px;
+}
+
+.footer-bar .footer-last-links ul li a {
+	text-decoration: none;
+	color: #696969;
+	font-size: 14px;
+}
+
+.footer-bar .footer-last-links ul li a:hover {
+	color: #1c1c1c;
+}
+
+.footer-bar .footer-last-links .footer-social-icons {
+	margin-bottom: 20px;
+}
+
+.footer-bar .footer-last-links .footer-social-icons a {
+	color: #1c1c1c;
+}
+
+.footer-bar .footer-last-links .footer-social-icons .fa-facebook,
+.footer-bar .footer-last-links .footer-social-icons .fa-twitter,
+.footer-bar .footer-last-links .footer-social-icons .fa-instagram {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.footer-bar .footer-copyright {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border-top: 1px solid #cfcfcf;
+}
+
+/*Mobile View*/
+@media(max-width: 500px) {
+	.showcase {
+		height: 500px;
+	}
+
+	.hero-text .search-bar {
+		width: 100%;
+	}
+
+	.search-3 {
+		display: none;
+	}
+
+	.order-cat {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.collections {
+	flex-direction: column;
+	justify-content: center;
+	}
+
+	.collection-grid {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.locals-grid {
+	grid-template-columns: repeat(1, 1fr);
+	}
+
+	.zom-app {
+		padding-left: 20px;
+		padding-right: 20px;
+		flex-direction: column;
+	}
+
+	.zom-app .zom-app-right {
+	margin-left: 20px;
+	width: 100%;
+	}
+
+	.restraunt-chains {
+	grid-template-columns: repeat(3, 1fr);
+	}
+
+    .footer-bar .footer-lang {
+        flex-direction: column;
+    }
+
+    .footer-bar .footer-lang .btn-lang-top {
+        margin-top: 20px;
+    }
+
+	.footer-links {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.footer-bar .footer-last-links {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	}
+
+	.footer-bar .footer-last-links h4.footer-list-title {
+		margin-top: 20px;
+	}
+
+}

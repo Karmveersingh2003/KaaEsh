@@ -1,0 +1,500 @@
+#aboutus_top_heading button {
+    color: rgba(255, 128, 0, 0.778);
+    box-shadow: rgba(99, 99, 99, 0.441) 0px 2px 8px 0px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#aboutus_top_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+#about_discover_our_heading {
+    text-align: center;
+    margin: 10px;
+}
+
+#about_discover_our_heading h1 {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#about_discover_our_heading img {
+    height: 45px;
+}
+
+#about_discover_our_heading p {
+    font-weight: bold;
+    font-size: medium;
+    font-family: playfair;
+    margin: 0px 170px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    #about_discover_our_heading p {
+        margin: 0px 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    #about_discover_our_heading p {
+        margin: 0px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about_discover_our_heading p {
+        margin: 0px 30px;
+        font-size: small;
+    }
+
+    #about_discover_our_heading img {
+        height: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    #about_discover_our_heading p {
+        margin: 0px 20px;
+        font-size: small;
+    }
+
+    #about_discover_our_heading h1 {
+        font-size: 1.5rem;
+    }
+
+    #aboutus_top_heading {
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    #about_discover_our_heading p {
+        margin: 0px 10px;
+        font-size: small;
+    }
+
+    #about_discover_our_heading h1 {
+        font-size: 1.2rem;
+    }
+
+    #about_discover_our_heading img {
+        height: 25px;
+    }
+}
+
+#about_us_img_corn img {
+    height: 350px;
+    width: 750px;
+    border-radius: 25px;
+    box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
+    margin: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+#about_us_img_corn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#aboutus_top_ourblog_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin-top: 30px;
+}
+
+#aboutus_top_ourblog_heading button {
+    color: rgba(255, 128, 0, 0.778);
+    font-size: 20px;
+    box-shadow: rgba(99, 99, 99, 0.441) 0px 2px 8px 0px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #about_us_img_corn img {
+        height: 350px;
+        width: 750px;
+    }
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    #about_us_img_corn img {
+        height: 300px;
+        width: 650px;
+    }
+
+    #aboutus_top_ourblog_heading button {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+/* Small screens (phones, less than 768px) */
+@media (max-width: 767px) {
+    #about_us_img_corn img {
+        height: auto;
+        width: 100%;
+        margin: 10px;
+    }
+
+    #aboutus_top_ourblog_heading button {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    #aboutus_top_ourblog_heading {
+        height: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+/* Animation keyframes remain unchanged */
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.slider {
+    background: pr;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%; /* Adjusted to be responsive */
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 20%; /* Adjusted to be responsive */
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+    overflow: hidden; /* Ensures slides stay within slider boundaries */
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 960px) {
+    .slider {
+        width: 100%; /* Adjusted to fill available width */
+    }
+
+    .slider::before,
+    .slider::after {
+        width: 25%; /* Adjusted for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider::before,
+    .slider::after {
+        width: 30%; /* Adjusted for even smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider .slide {
+        width: 200px; /* Adjust slide width for smaller screens */
+    }
+}
+ 
+#flex_publications_card_aboutus {
+    display: flex;
+}
+
+#Latest_card_aboutus {
+    box-shadow: 30px 30px 50px #dcdcdc, -30px -30px 50px #ffffff;
+    padding: 20px;
+    border-radius: 35px;
+    margin: 20px;
+    max-width: 90%;
+    transition: transform 0.9s cubic-bezier(0.22, 0.78, 0.45, 1.02), box-shadow 0.9s;
+}
+
+#Latest_card_aboutus:hover {
+    transform: scale(0.9);
+    background: linear-gradient(145deg, #ececec, #fdfdfd);
+    box-shadow: 30px 30px 50px #dcdcdc, -30px -30px 50px #ffffff;
+}
+
+#Latest_card_aboutus p {
+    margin-top: 5px;
+    padding: 5px 15px;
+    background: #f8f9fa;
+    box-shadow: inset 5px 5px 10px #e2e2e2, inset -5px -5px 10px #e8e8e8;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+#Latest_card_aboutus h4 {
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 700;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+#Latest_card_aboutus h5 {
+    font-size: 18px;
+    margin: 10px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.667);
+}
+
+#Latest_card_aboutus button {
+    font-size: 18px;
+    margin: 10px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.667);
+    border-radius: 40px;
+    padding: 15px;
+    border-color: transparent;
+    box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+}
+
+#Latest_card_aboutus img {
+    height: 280px;
+    width: 100%;
+    border-radius: 35px;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    #Latest_card_aboutus {
+        max-width: 80%;
+    }
+
+    #Latest_card_aboutus img {
+        height: 240px;
+    }
+    #flex_publications_card_aboutus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    #Latest_card_aboutus {
+        max-width: 70%;
+    }
+    #flex_publications_card_aboutus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #Latest_card_aboutus img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    #Latest_card_aboutus {
+        max-width: 100%;
+    }
+    #flex_publications_card_aboutus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #Latest_card_aboutus img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    #Latest_card_aboutus {
+        margin: 10px;
+        padding: 15px;
+    }
+    #flex_publications_card_aboutus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #Latest_card_aboutus img {
+        height: 160px;
+    }
+
+    #Latest_card_aboutus h4, #Latest_card_aboutus h5, #Latest_card_aboutus button {
+        font-size: 16px;
+    }
+}
+
+
+#subscribe_bg_img {
+    background-image: url("./suscribe.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    max-width: 100%; /* Ensure it doesn't exceed its container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 35px;
+    padding: 20px; /* Add padding to give space around content */
+}
+
+#subscribe_bg_img h2 {
+    color: whitesmoke;
+    font-size: 38px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 10px; /* Adjust spacing */
+}
+
+#subscribe_bg_img p {
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; /* Adjust font size */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    #subscribe_bg_img {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    #subscribe_bg_img h2 {
+        font-size: 32px; /* Adjust font size for smaller screens */
+        line-height: 40px; /* Adjust line height */
+    }
+
+    #subscribe_bg_img p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    #subscribe_bg_img {
+        height: 180px; /* Further adjust height for smaller screens */
+    }
+
+    #subscribe_bg_img h2 {
+        font-size: 28px; /* Further adjust font size for smaller screens */
+        line-height: 36px; /* Further adjust line height */
+    }
+
+    #subscribe_bg_img p {
+        font-size: 14px; /* Further adjust font size for smaller screens */
+    }
+}
+.aboutus_form_input {
+    width: 100%; /* Adjusts width to 100% of the parent container */
+    max-width: 470px; /* Limits maximum width */
+    height: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    box-sizing: border-box; /* Ensures padding and border are included in width calculation */
+}
+
+#main_suscribe_div {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.aboutus_form_btn {
+    width: 100%; /* Adjusts width to 100% of the parent container */
+    max-width: 200px; /* Limits maximum width */
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 4px;
+    background-color: rgb(255, 111, 0);
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+}
+
+#box_suscribe_main_about form {
+    padding: 10px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .aboutus_form_input {
+        max-width: 100%; /* Adjusts width to 100% for smaller screens */
+    }
+
+    .aboutus_form_btn {
+        max-width: 100%; /* Adjusts width to 100% for smaller screens */
+    }
+}

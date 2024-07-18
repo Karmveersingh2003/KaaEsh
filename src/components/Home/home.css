@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #1c1c1c;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+/*Global*/
+.container {
+	width: 90%;
+	max-width: 1150px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+/*Order category*/
+.order-cat {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	margin-bottom: 50px;
+}
+
+.order-cat .hover{
+	position: relative;
+	cursor: pointer;
+	transition: transform 0.3s;
+}
+
+.order-cat .hover:hover {
+	transform: scale(1.05);
+}
+
+.order-cat img {
+	width: 100%;
+	border-radius: 12px;
+}
+
+.order-cat .order-title-bg {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 10px 0 16px;
+	background-color: #fff;
+	width: 100%;
+	border: 1px solid #e8e8e8;
+	border-radius: 0 0 12px 12px;
+}
+
+.order-cat .order-title {
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+}
+
+/*Collections*/
+.collections {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.collections p{
+	font-size: 18px;
+}
+
+.collections a{
+	font-size: 16px;
+	color: #f57082;
+	text-decoration: none;
+}
+
+.collections .fa-caret-right{
+	margin-left: 10px;
+}
+
+.collection-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	margin-bottom: 100px;
+}
+
+.collection-grid .collection-box {
+	position: relative;
+}
+
+.collection-grid .collection-box img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.collection-grid .collection-box .collection-title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 10px 15px;
+}
+
+.collection-grid .collection-box .collection-title h3 {
+	font-weight: 500;
+	color: #fff;
+}
+
+.collection-grid .collection-box .collection-title p {
+	color: #fff;
+}
+
+/*Localities*/
+h1.local-title {
+	color: #363636;
+	font-size: 36px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.locals-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	row-gap: 35px;
+}
+
+.locals-grid .local-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	font-size: 20px;
+	color: #1c1c1c;
+	border: 1px solid #e8e8e8;
+	border-radius: 8px;
+	box-shadow: 0 1.4px 2.8px rgba(28,28,28,0.08);
+	cursor: pointer;
+}
+
+.locals-grid .local-box:hover {
+	box-shadow: 0 1.4px 2.8px 2px rgba(28,28,28,0.08);
+}
+
+.local-box .fa-chevron-right {
+	font-size: 10px;
+}
+
+/*Get zomato app*/
+.zom-app {
+	background-color: #FFFBF7;
+	margin: 100px auto;
+	padding-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.zom-app img {
+	height: 450px;
+}
+
+.zom-app .zom-app-right {
+	margin-left: 50px;
+	width: 450px;
+}
+
+.zom-app .zom-app-right h1{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.zom-app .zom-app-right p{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.zom-app-right .radio-btn {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 50%;
+	padding-right: 50px;
+	margin-bottom: 20px;
+}
+
+.zom-app-right .radio-btn input[type="radio"] {
+	transform: scale(1.5);
+	margin-right: 10px;
+}
+
+.zom-app-right .email-phone {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.zom-app-right input[type="text"] {
+	padding: 13px 12px;
+	border-radius: 8px;
+	border: 1px solid #cfcfcf;
+	margin-right: 10px;
+}
+
+.zom-app-right a.btn-share {
+	color: #fff;
+	background-color: #ed5a6b;
+	border-radius: 8px;
+	padding: 13px 12px;
+	text-decoration: none;
+}
+
+.zom-app-right a.btn-share:hover {
+	background-color: #ec4654;
+}
+
+.zom-app-right .app-store {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.zom-app-right p.small-text {
+	color: #9c9c9c;
+	margin-top: 20px;
+}
+
+.zom-app-right .app-store .app-image {
+	margin-right: 20px;
+}
+
+.zom-app-right .app-store img {
+	width: 137px;
+	height: 40px;
+}
+
+/*Explore*/
+h1.explore-title {
+	margin-bottom: 30px;
+	color: #363636;
+} 
+
+h2.explore-title-2 {
+	margin-bottom: 20px;
+	color: #363636;
+}
+
+.wrap-links {
+	margin-bottom: 100px;
+}
+
+.wrap-links a {
+	font-size: 16px;
+	color: #828282;
+	text-decoration: none;
+	margin-right: 8px;
+	line-height: 1.8;
+}
+
+.wrap-links .dot-seperator {
+	display: inline-block;
+	height: 3px;
+	width: 3px;
+	background-color: #828282;
+	border-radius: 50%;
+	margin-bottom: 3px;
+	margin-right: 8px;
+}
+
+.restraunt-chains {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	row-gap: 20px;
+	margin-bottom: 100px;
+}
+
+.restraunt-chains a {
+	font-size: 16px;
+	color: #828282;
+	text-decoration: none;
+}
+
+.footer-links {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin-top: 30px;
+	margin-bottom: 100px;
+}
+
+.footer-links ul li{
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.footer-links ul li a {
+	font-size: 16px;
+	color: #828282;
+	text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+	color: #363636;
+}
+
+.footer-links ul li a.last-link {
+	color: #1c1c1c;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #1c1c1c;
+	font-weight: 600;
+}
+
+
+#customer_review_main_box {
+    display: flex;
+}
+
+#girl_chef_img_home img {
+    margin-right: 20px;
+    width: 600px;
+    max-width: 600px;
+    height: 520px;
+}
+
+#Latest_card_home {
+    box-shadow: 30px 30px 50px #dcdcdc, -30px -30px 50px #ffffff;
+    padding: 20px;
+    border-radius: 35px;
+    margin: 20px;
+    max-width: 400px;
+    background-color: #f2ecec;
+    transition: transform 0.9s cubic-bezier(0.22, 0.78, 0.45, 1.02), box-shadow 0.9s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
+#Latest_card_home:hover {
+    transform: scale(1.05);
+    background: linear-gradient(145deg, #ececec, #fdfdfd);
+    box-shadow: 30px 30px 50px #dcdcdc, -30px -30px 50px #ffffff;
+}
+
+#Latest_card_home h4 {
+    font-size: 1.125rem; /* 18px */
+    margin: 10px;
+    font-weight: 700;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+#Latest_card_home p {
+    font-size: 1.125rem; /* 18px */
+    margin: 10px;
+    font-weight: 600;
+    font-family: "sans-serif";
+}
+
+#Latest_card_home img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+#profile_reviewer_home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #girl_chef_img_home img {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    #girl_chef_img_home img {
+        margin-right: 20px;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    #Latest_card_home {
+        max-width: 100%;
+        margin: 20px 10px;
+    }
+    
+#customer_review_main_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+
+@media (max-width: 480px) {
+    #Latest_card_home h4, #Latest_card_home p {
+        font-size: 1rem; /* 16px */
+    }
+
+    #girl_chef_img_home img {
+        margin-right: 20px;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    #Latest_card_home img {
+        height: 80px;
+        width: 80px;
+        margin-top: -40px;
+    }
+    
+#customer_review_main_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+}
+
+
+
+.meet_our_chef_slide {
+    height: 150px;
+    width: 200px;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.meet_our_chef_slide img {
+    height: 100%;
+    width: 100%;
+    transition: transform 1s;
+}
+
+.meet_our_chef_image-slider {
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 1050px;
+    width: 100%;
+}
+
+.meet_our_chef_image-slider-track {
+    display: flex;
+    width: calc(200px * 12);
+    height: 400px;
+    animation: meet_our_chef_play 14s linear infinite;
+}
+
+@keyframes meet_our_chef_play {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-120px * 6));
+    }
+}
+
+.meet_our_chef_image-slider::before,
+.meet_our_chef_image-slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    width: 15%;
+    z-index: 2;
+    position: absolute;
+}
+
+.meet_our_chef_image-slider::before {
+    left: 0;
+    top: 0;
+}
+
+.meet_our_chef_image-slider::after {
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.meet_our_chef_slide img:hover {
+    transform: translateZ(20px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .meet_our_chef_slide {
+        height: 120px;
+        width: 160px;
+    }
+    .meet_our_chef_image-slider {
+        height: 900px;
+    }
+    .meet_our_chef_image-slider-track {
+        width: calc(160px * 12);
+        height: 300px;
+    }
+    @keyframes meet_our_chef_play {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-100px * 6));
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .meet_our_chef_slide {
+        height: 100px;
+        width: 140px;
+    }
+    .meet_our_chef_image-slider {
+        height: 800px;
+    }
+    .meet_our_chef_image-slider-track {
+        width: calc(140px * 12);
+        height: 250px;
+    }
+    @keyframes meet_our_chef_play {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-80px * 6));
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .meet_our_chef_slide {
+        height: 80px;
+        width: 120px;
+    }
+    .meet_our_chef_image-slider {
+        height: 600px;
+    }
+    .meet_our_chef_image-slider-track {
+        width: calc(120px * 12);
+        height: 200px;
+    }
+    @keyframes meet_our_chef_play {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-70px * 6));
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .meet_our_chef_slide {
+        height: 60px;
+        width: 100px;
+    }
+    .meet_our_chef_image-slider {
+        height: 400px;
+    }
+    .meet_our_chef_image-slider-track {
+        width: calc(100px * 12);
+        height: 150px;
+    }
+    @keyframes meet_our_chef_play {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-60px * 6));
+        }
+    }
+}
